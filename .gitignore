@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# v2.0 local state
+__pycache__/
+*.pyc
+data/browser_routing.json
+data/tour_short_names.csv
+chrome_profiles/
+Chrome_debug*/

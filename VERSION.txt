@@ -1,0 +1,23 @@
+TOURSTORY Review Crawler v2.0
+Build date: 2026-11-25
+
+Based on
+- ReviewCrawler_v25.exe : 주단위(PFP) / 월단위 · 국가(지사) 선택 · 전체/지사 Copy 텍스트 보고
+- Review Analyzer v1.3  : 지역별 Chrome 계정 라우팅 · 5개 OTA 수집기 · 투어 분석 · GPT Excel · AI 분석
+- v1.4 개선            : 결과 Excel 맨 앞 지사 요약 · 성과제 · 투어별 리뷰 총정리 시트
+
+New in v2.0
+1. 새 단일 창 UI: ① 지역별 Chrome 연결 → ② 리뷰 수집 → ③ 결과 · 보고서
+2. 지역별 Chrome 카드 (KR/JP/AU/UK + 추가 계정)
+   - 지역마다 Chrome 열기(OTA 로그인 탭) / 로그인 확인 / 닫기를 따로
+   - 담당 국가 · OTA 표시, OTA 별 로그인 상태 표시
+   - OTA 연결표 · Area 예외 · 계정 추가/수정을 같은 화면에서
+3. v1.3 로그인 폴더 자동 감지 → 복사 없이 연결 (다시 로그인 불필요)
+4. 리뷰 수집 화면: 주단위/월단위 목록 선택, 국가 체크, 지역 Chrome 연결 미리보기(미설정 · 로그인 필요 표시)
+5. 진행률 표시 (OTA × 지역 Chrome 단위)
+6. 결과 화면: KPI · 별점 분포 · 투어별 분석 · 지사 보고 텍스트 복사 · 성과제 · 수집 상태
+7. 결과 파일명: Review Crawler <주간|월간|기간> <시작>_<종료> <국가>.xlsx, 저장 폴더 변경 가능
+
+Unchanged
+- collectors/* (Klook · KKday · GetYourGuide · Trip.com/Ctrip · MyRealTrip)
+- core/matcher.py · core/metrics.py · core/scope.py · core/excel_loader.py
